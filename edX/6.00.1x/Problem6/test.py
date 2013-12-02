@@ -51,3 +51,24 @@ def applyCoder(text, coder):
 	   starting at line 3.
 11. Return the best shift.
 """
+def findBestShift(wordList, text):
+  max_real_words = 0
+  best_shift = 0
+  for attempt in range(26):
+     plain_text = applyCoder(text, buildCoder(attempt))
+     checkWordList = plain_text.split(' ')
+     tmp_real_word = 0
+     for word in checkWordList:
+       if word.isWord(checkWordList, word):
+	     tmp_real_word += 1
+     if tmp_real_word > max_real_words:
+       max_real_words = tmp_real_word
+       best_shift = attempt
+  return best_shift
+      
+      
+      
+      
+      
+      
+      

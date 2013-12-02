@@ -121,31 +121,54 @@ class SummaryTrigger(WordTrigger):
 # Problems 6-8
 
 class NotTrigger(Trigger):
-	def __init__(self, trigger):
+	
+    def __init__(self, trigger):
 		self.trigger = trigger
-	def evaluate(self, story):
+	
+    def evaluate(self, story):
 			return not self.trigger.evaluate(story)
 
 class AndTrigger(Trigger):
-	def __init__(self, trigger1, trigger2):
+	
+    def __init__(self, trigger1, trigger2):
 		self.trigger1 = trigger1
 		self.trigger2 = trigger2
-	def evaluate(self, story):
+	
+    def evaluate(self, story):
 			return self.trigger1.evaluate(story) and self.trigger2.evaluate(story)
 			
 class OrTrigger(Trigger):
-	def __init__(self, trigger1, trigger2):
+	
+    def __init__(self, trigger1, trigger2):
 		self.trigger1 = trigger1
 		self.trigger2 = trigger2
-	def evaluate(self, story):
+	
+    def evaluate(self, story):
 			return self.trigger1.evaluate(story) or self.trigger2.evaluate(story)
 
 
 # Phrase Trigger
 # Question 9
 
-# TODO: PhraseTrigger
-
+class PhraseTrigger(Trigger):
+    
+    def __init__(self, phrase):
+        self.phrase = phrase
+    
+    def normalizeText(self, text):
+        print "TEXT ", text
+        for punctuation in string.punctuation:
+            text = text.replace(punctuation, " ")    
+        return text
+    
+    def isPhraseIn(self, text):
+        return self.phrase in text
+    
+    def evaluate(self, story):
+            isTitle = self.isPhraseIn(story.getTitle())
+            isSummary = self.isPhraseIn(story.getSummary())
+            isSubject = self.isPhraseIn(story.getSubject())
+            return  isTitle or isSummary or isSubject
 
 #======================
 # Part 3

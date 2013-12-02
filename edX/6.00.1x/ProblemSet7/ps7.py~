@@ -64,7 +64,7 @@ class NewsStory(object):
 		return self.subject
 		
 	def getSummary(self):
-		return self.summary
+		return summary
 		
 	def getLink(self):
 		return self.link

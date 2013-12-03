@@ -181,9 +181,14 @@ def filterStories(stories, triggerlist):
 
     Returns: a list of only the stories for which a trigger in triggerlist fires.
     """
-    # TODO: Problem 10
-    # This is a placeholder (we're just returning all the stories, with no filtering) 
-    return stories
+    results = []
+    for trigger in triggerlist:
+    	for story in stories:
+    		isOk = trigger.evaluate(story)
+    		if isOk and (story not in results):
+    			results.append(story)
+    return results 
+    	
 
 #======================
 # Part 4
@@ -205,7 +210,15 @@ def makeTrigger(triggerMap, triggerType, params, name):
 
     Returns a new instance of a trigger (ex: TitleTrigger, AndTrigger).
     """
-    # TODO: Problem 11
+    triggerTypeStr = triggerType.capitalize() + "Trigger"
+    if triggerType == 'PHRASE':
+    	trigger = eval(triggerTypeStr + "('" + ' '.join(params) + "')")
+    elif triggerType in ['TITLE', 'SUBJECT', 'SUMMARY']:
+    	trigger = eval(triggerTypeStr + "('" + ''.join(params) + "')")
+    else:
+    	trigger = eval(triggerTypeStr + "(" + ','.join(map(lambda p: "triggerMap['" + p + "']", params)) + ")")
+    triggerMap[name] = trigger
+    return trigger
 
 
 def readTriggerConfig(filename):
@@ -265,7 +278,7 @@ def main_thread(master):
         
         # TODO: Problem 11
         # After implementing makeTrigger, uncomment the line below:
-        # triggerlist = readTriggerConfig("triggers.txt")
+        triggerlist = readTriggerConfig("triggers.txt")
 
         # **** from here down is about drawing ****
         frame = Frame(master)

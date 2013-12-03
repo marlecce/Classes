@@ -121,31 +121,54 @@ class SummaryTrigger(WordTrigger):
 # Problems 6-8
 
 class NotTrigger(Trigger):
-	def __init__(self, trigger):
+	
+    def __init__(self, trigger):
 		self.trigger = trigger
-	def evaluate(self, story):
+	
+    def evaluate(self, story):
 			return not self.trigger.evaluate(story)
 
 class AndTrigger(Trigger):
-	def __init__(self, trigger1, trigger2):
+	
+    def __init__(self, trigger1, trigger2):
 		self.trigger1 = trigger1
 		self.trigger2 = trigger2
-	def evaluate(self, story):
+	
+    def evaluate(self, story):
 			return self.trigger1.evaluate(story) and self.trigger2.evaluate(story)
 			
 class OrTrigger(Trigger):
-	def __init__(self, trigger1, trigger2):
+	
+    def __init__(self, trigger1, trigger2):
 		self.trigger1 = trigger1
 		self.trigger2 = trigger2
-	def evaluate(self, story):
+	
+    def evaluate(self, story):
 			return self.trigger1.evaluate(story) or self.trigger2.evaluate(story)
 
 
 # Phrase Trigger
 # Question 9
 
-# TODO: PhraseTrigger
-
+class PhraseTrigger(Trigger):
+    
+    def __init__(self, phrase):
+        self.phrase = phrase
+    
+    def normalizeText(self, text):
+        print "TEXT ", text
+        for punctuation in string.punctuation:
+            text = text.replace(punctuation, " ")    
+        return text
+    
+    def isPhraseIn(self, text):
+        return self.phrase in text
+    
+    def evaluate(self, story):
+            isTitle = self.isPhraseIn(story.getTitle())
+            isSummary = self.isPhraseIn(story.getSummary())
+            isSubject = self.isPhraseIn(story.getSubject())
+            return  isTitle or isSummary or isSubject
 
 #======================
 # Part 3
@@ -158,9 +181,14 @@ def filterStories(stories, triggerlist):
 
     Returns: a list of only the stories for which a trigger in triggerlist fires.
     """
-    # TODO: Problem 10
-    # This is a placeholder (we're just returning all the stories, with no filtering) 
-    return stories
+    results = []
+    for trigger in triggerlist:
+    	for story in stories:
+    		isOk = trigger.evaluate(story)
+    		if isOk and (story not in results):
+    			results.append(story)
+    return results 
+    	
 
 #======================
 # Part 4
@@ -182,7 +210,16 @@ def makeTrigger(triggerMap, triggerType, params, name):
 
     Returns a new instance of a trigger (ex: TitleTrigger, AndTrigger).
     """
-    # TODO: Problem 11
+    triggerTypeStr = triggerType.capitalize() + "Trigger"	
+	 if triggerType == 'PHRASE':
+		trigger = eval(triggerTypeStr + "('" + ' '.join(params) + "')")
+	 elif triggerType in ['TITLE', 'SUBJECT', 'SUMMARY']:
+		trigger = eval(triggerTypeStr + "('" + ''.join(params) + "')")
+	 else:		
+		trigger = eval(triggerTypeStr + "(" + ','.join(map(lambda p: "triggerMap['" + p + "']", params)) + ")")
+		
+	 triggerMap[name] = trigger		
+	 return trigger
 
 
 def readTriggerConfig(filename):
@@ -242,7 +279,7 @@ def main_thread(master):
         
         # TODO: Problem 11
         # After implementing makeTrigger, uncomment the line below:
-        # triggerlist = readTriggerConfig("triggers.txt")
+        triggerlist = readTriggerConfig("triggers.txt")
 
         # **** from here down is about drawing ****
         frame = Frame(master)

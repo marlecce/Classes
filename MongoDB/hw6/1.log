@@ -1,0 +1,39 @@
+Tue Dec 31 17:44:23.096 [initandlisten] MongoDB starting : pid=14373 port=27017 dbpath=/data/rs1 64-bit host=mj-laptop
+Tue Dec 31 17:44:23.096 [initandlisten] db version v2.4.6
+Tue Dec 31 17:44:23.096 [initandlisten] git version: nogitversion
+Tue Dec 31 17:44:23.096 [initandlisten] build info: Linux allspice 3.2.0-37-generic #58-Ubuntu SMP Thu Jan 24 15:28:10 UTC 2013 x86_64 BOOST_LIB_VERSION=1_53
+Tue Dec 31 17:44:23.096 [initandlisten] allocator: tcmalloc
+Tue Dec 31 17:44:23.096 [initandlisten] options: { dbpath: "/data/rs1", fork: true, logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Tue Dec 31 17:44:23.138 [initandlisten] journal dir=/data/rs1/journal
+Tue Dec 31 17:44:23.138 [initandlisten] recover : no journal files present, no recovery needed
+Tue Dec 31 17:44:26.455 [initandlisten] preallocateIsFaster=true 42.22
+Tue Dec 31 17:44:29.779 [initandlisten] preallocateIsFaster=true 42.36
+Tue Dec 31 17:44:33.949 [initandlisten] preallocateIsFaster=true 39.34
+Tue Dec 31 17:44:33.949 [initandlisten] preallocateIsFaster check took 10.81 secs
+Tue Dec 31 17:44:33.949 [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.0
+Tue Dec 31 17:44:37.883 [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.1
+Tue Dec 31 17:44:42.332 [initandlisten] preallocating a journal file /data/rs1/journal/prealloc.2
+Tue Dec 31 17:44:46.788 [FileAllocator] allocating new datafile /data/rs1/local.ns, filling with zeroes...
+Tue Dec 31 17:44:46.788 [FileAllocator] creating directory /data/rs1/_tmp
+Tue Dec 31 17:44:46.985 [FileAllocator] done allocating datafile /data/rs1/local.ns, size: 16MB,  took 0.122 secs
+Tue Dec 31 17:44:46.986 [FileAllocator] allocating new datafile /data/rs1/local.0, filling with zeroes...
+Tue Dec 31 17:44:47.053 [FileAllocator] done allocating datafile /data/rs1/local.0, size: 16MB,  took 0.067 secs
+Tue Dec 31 17:44:47.055 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 267ms
+Tue Dec 31 17:44:47.056 [initandlisten] ERROR: listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:27017
+Tue Dec 31 17:44:47.056 [initandlisten] ERROR:   addr already in use
+Tue Dec 31 17:44:47.056 [initandlisten] now exiting
+Tue Dec 31 17:44:47.056 dbexit: 
+Tue Dec 31 17:44:47.056 [initandlisten] shutdown: going to close listening sockets...
+Tue Dec 31 17:44:47.056 [initandlisten] shutdown: going to flush diaglog...
+Tue Dec 31 17:44:47.056 [initandlisten] shutdown: going to close sockets...
+Tue Dec 31 17:44:47.056 [initandlisten] shutdown: waiting for fs preallocator...
+Tue Dec 31 17:44:47.056 [initandlisten] shutdown: lock for final commit...
+Tue Dec 31 17:44:47.056 [initandlisten] shutdown: final commit...
+Tue Dec 31 17:44:47.056 [websvr] ERROR: listen(): bind() failed errno:98 Address already in use for socket: 0.0.0.0:28017
+Tue Dec 31 17:44:47.056 [websvr] ERROR:   addr already in use
+Tue Dec 31 17:44:47.365 [initandlisten] shutdown: closing all files...
+Tue Dec 31 17:44:47.365 [initandlisten] closeAllFiles() finished
+Tue Dec 31 17:44:47.365 [initandlisten] journalCleanup...
+Tue Dec 31 17:44:47.365 [initandlisten] removeJournalFiles
+Tue Dec 31 17:44:47.543 [initandlisten] shutdown: removing fs lock...
+Tue Dec 31 17:44:47.543 dbexit: really exiting now

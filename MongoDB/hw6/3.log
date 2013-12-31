@@ -1,0 +1,182 @@
+Tue Dec 31 17:45:20.922 [initandlisten] MongoDB starting : pid=14548 port=27019 dbpath=/data/rs3 64-bit host=mj-laptop
+Tue Dec 31 17:45:20.922 [initandlisten] db version v2.4.6
+Tue Dec 31 17:45:20.922 [initandlisten] git version: nogitversion
+Tue Dec 31 17:45:20.922 [initandlisten] build info: Linux allspice 3.2.0-37-generic #58-Ubuntu SMP Thu Jan 24 15:28:10 UTC 2013 x86_64 BOOST_LIB_VERSION=1_53
+Tue Dec 31 17:45:20.922 [initandlisten] allocator: tcmalloc
+Tue Dec 31 17:45:20.922 [initandlisten] options: { dbpath: "/data/rs3", fork: true, logpath: "3.log", oplogSize: 64, port: 27019, replSet: "m101", smallfiles: true }
+Tue Dec 31 17:45:21.057 [initandlisten] journal dir=/data/rs3/journal
+Tue Dec 31 17:45:21.057 [initandlisten] recover : no journal files present, no recovery needed
+Tue Dec 31 17:45:24.102 [initandlisten] preallocateIsFaster=true 35.62
+Tue Dec 31 17:45:27.482 [initandlisten] preallocateIsFaster=true 43.8
+Tue Dec 31 17:45:31.085 [initandlisten] preallocateIsFaster=true 27.18
+Tue Dec 31 17:45:31.085 [initandlisten] preallocateIsFaster check took 10.028 secs
+Tue Dec 31 17:45:31.085 [initandlisten] preallocating a journal file /data/rs3/journal/prealloc.0
+Tue Dec 31 17:45:34.423 [initandlisten] preallocating a journal file /data/rs3/journal/prealloc.1
+Tue Dec 31 17:45:37.819 [initandlisten] preallocating a journal file /data/rs3/journal/prealloc.2
+Tue Dec 31 17:45:41.456 [FileAllocator] allocating new datafile /data/rs3/local.ns, filling with zeroes...
+Tue Dec 31 17:45:41.456 [FileAllocator] creating directory /data/rs3/_tmp
+Tue Dec 31 17:45:41.503 [FileAllocator] done allocating datafile /data/rs3/local.ns, size: 16MB,  took 0.022 secs
+Tue Dec 31 17:45:41.503 [FileAllocator] allocating new datafile /data/rs3/local.0, filling with zeroes...
+Tue Dec 31 17:45:41.559 [FileAllocator] done allocating datafile /data/rs3/local.0, size: 16MB,  took 0.056 secs
+Tue Dec 31 17:45:41.562 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 107ms
+Tue Dec 31 17:45:41.563 [initandlisten] waiting for connections on port 27019
+Tue Dec 31 17:45:41.563 [websvr] admin web console waiting for connections on port 28019
+Tue Dec 31 17:45:41.566 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:45:41.566 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Tue Dec 31 17:45:51.566 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:46:01.567 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:46:11.567 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:46:21.568 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:46:31.568 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:46:41.569 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:46:51.570 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:47:01.570 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:47:11.571 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:47:21.571 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:47:31.572 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:47:41.572 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:47:51.573 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:48:01.573 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:48:11.574 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:48:21.574 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:48:31.575 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:48:41.575 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:48:51.576 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:49:01.576 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:49:11.577 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:49:21.577 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:49:31.578 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:49:41.578 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:49:51.579 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:50:01.579 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:50:11.579 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:50:21.580 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:50:31.580 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:50:41.581 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:50:51.582 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:51:01.582 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:51:11.582 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:51:21.583 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:51:31.583 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:51:41.584 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:51:51.585 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:52:01.585 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:52:11.586 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:52:21.586 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:52:31.587 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:52:41.587 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:52:51.588 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:53:01.588 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:53:11.589 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:53:21.590 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:53:31.590 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:53:41.591 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:53:51.591 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:54:01.591 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:54:11.592 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:54:21.592 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:54:31.592 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:54:41.593 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:54:51.593 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:55:01.594 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:55:11.594 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:55:21.595 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:55:31.595 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:55:41.595 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:55:51.596 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:56:01.597 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:56:11.597 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:56:21.598 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:56:31.598 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:56:41.599 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:56:51.599 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:57:01.600 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:57:08.293 [initandlisten] connection accepted from 127.0.0.1:49429 #1 (1 connection now open)
+Tue Dec 31 17:57:08.311 [conn1] end connection 127.0.0.1:49429 (0 connections now open)
+Tue Dec 31 17:57:08.490 [initandlisten] connection accepted from 127.0.0.1:49430 #2 (1 connection now open)
+Tue Dec 31 17:57:08.491 [conn2] end connection 127.0.0.1:49430 (0 connections now open)
+Tue Dec 31 17:57:08.494 [initandlisten] connection accepted from 127.0.0.1:49431 #3 (1 connection now open)
+Tue Dec 31 17:57:08.494 [conn3] end connection 127.0.0.1:49431 (0 connections now open)
+Tue Dec 31 17:57:11.600 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:57:21.601 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:57:31.601 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:57:41.602 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:57:50.901 [initandlisten] connection accepted from 127.0.0.1:49437 #4 (1 connection now open)
+Tue Dec 31 17:57:51.602 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue Dec 31 17:58:01.603 [rsStart] trying to contact localhost:27017
+Tue Dec 31 17:58:01.606 [rsStart] replSet I am localhost:27019
+Tue Dec 31 17:58:01.607 [rsStart] replSet got config version 1 from a remote, saving locally
+Tue Dec 31 17:58:01.607 [rsStart] replSet info saving a newer config version to local.system.replset
+Tue Dec 31 17:58:01.608 [rsStart] replSet saveConfigLocally done
+Tue Dec 31 17:58:01.609 [rsStart] replSet STARTUP2
+Tue Dec 31 17:58:01.610 [rsSync] ******
+Tue Dec 31 17:58:01.610 [rsSync] creating replication oplog of size: 64MB...
+Tue Dec 31 17:58:01.610 [FileAllocator] allocating new datafile /data/rs3/local.1, filling with zeroes...
+Tue Dec 31 17:58:01.922 [FileAllocator] done allocating datafile /data/rs3/local.1, size: 128MB,  took 0.312 secs
+Tue Dec 31 17:58:01.924 [rsSync] ******
+Tue Dec 31 17:58:01.924 [rsSync] replSet initial sync pending
+Tue Dec 31 17:58:01.924 [rsSync] replSet initial sync need a member to be primary or secondary to do our initial sync
+Tue Dec 31 17:58:02.624 [initandlisten] connection accepted from 127.0.0.1:49440 #5 (2 connections now open)
+Tue Dec 31 17:58:03.608 [rsHealthPoll] replSet member localhost:27018 is up
+Tue Dec 31 17:58:03.608 [rsHealthPoll] replSet member localhost:27018 is now in state STARTUP2
+Tue Dec 31 17:58:03.608 [rsHealthPoll] replSet member localhost:27017 is up
+Tue Dec 31 17:58:03.609 [rsHealthPoll] replSet member localhost:27017 is now in state SECONDARY
+Tue Dec 31 17:58:09.156 [conn4] replSet RECOVERING
+Tue Dec 31 17:58:09.156 [conn4] replSet info voting yea for localhost:27017 (0)
+Tue Dec 31 17:58:09.611 [rsHealthPoll] replSet member localhost:27018 is now in state RECOVERING
+Tue Dec 31 17:58:11.611 [rsHealthPoll] replSet member localhost:27017 is now in state PRIMARY
+Tue Dec 31 17:58:17.925 [rsSync] replSet initial sync pending
+Tue Dec 31 17:58:17.925 [rsSync] replSet syncing to: localhost:27017
+Tue Dec 31 17:58:17.929 [rsSync] build index local.me { _id: 1 }
+Tue Dec 31 17:58:17.932 [rsSync] build index done.  scanned 0 total records. 0.002 secs
+Tue Dec 31 17:58:17.934 [rsSync] build index local.replset.minvalid { _id: 1 }
+Tue Dec 31 17:58:17.935 [rsSync] build index done.  scanned 0 total records. 0 secs
+Tue Dec 31 17:58:17.936 [rsSync] replSet initial sync drop all databases
+Tue Dec 31 17:58:17.936 [rsSync] dropAllDatabasesExceptLocal 1
+Tue Dec 31 17:58:17.936 [rsSync] replSet initial sync clone all databases
+Tue Dec 31 17:58:17.936 [rsSync] replSet initial sync data copy, starting syncup
+Tue Dec 31 17:58:17.936 [rsSync] oplog sync 1 of 3
+Tue Dec 31 17:58:17.937 [rsSync] oplog sync 2 of 3
+Tue Dec 31 17:58:17.937 [rsSync] replSet initial sync building indexes
+Tue Dec 31 17:58:17.937 [rsSync] oplog sync 3 of 3
+Tue Dec 31 17:58:17.937 [rsSync] replSet initial sync finishing up
+Tue Dec 31 17:58:18.038 [rsSync] replSet set minValid=52c2f78f:1
+Tue Dec 31 17:58:18.039 [rsSync] replSet initial sync done
+Tue Dec 31 17:58:18.613 [rsBackgroundSync] replSet syncing to: localhost:27017
+Tue Dec 31 17:58:19.059 [rsSyncNotifier] replset setting oplog notifier to localhost:27017
+Tue Dec 31 17:58:19.614 [rsHealthPoll] replSet member localhost:27018 is now in state SECONDARY
+Tue Dec 31 17:58:20.040 [rsSync] replSet SECONDARY
+Tue Dec 31 17:58:27.162 [conn4] end connection 127.0.0.1:49437 (1 connection now open)
+Tue Dec 31 17:58:27.163 [initandlisten] connection accepted from 127.0.0.1:49451 #6 (2 connections now open)
+Tue Dec 31 17:58:30.635 [conn5] end connection 127.0.0.1:49440 (1 connection now open)
+Tue Dec 31 17:58:30.635 [initandlisten] connection accepted from 127.0.0.1:49452 #7 (3 connections now open)
+Tue Dec 31 17:58:34.225 [initandlisten] connection accepted from 127.0.0.1:49455 #8 (3 connections now open)
+Tue Dec 31 17:58:34.230 [conn8] end connection 127.0.0.1:49455 (2 connections now open)
+Tue Dec 31 17:58:57.173 [initandlisten] connection accepted from 127.0.0.1:49463 #9 (3 connections now open)
+Tue Dec 31 17:58:57.173 [conn6] end connection 127.0.0.1:49451 (2 connections now open)
+Tue Dec 31 17:59:00.645 [conn7] end connection 127.0.0.1:49452 (1 connection now open)
+Tue Dec 31 17:59:00.645 [initandlisten] connection accepted from 127.0.0.1:49464 #10 (2 connections now open)
+Tue Dec 31 17:59:27.181 [conn9] end connection 127.0.0.1:49463 (1 connection now open)
+Tue Dec 31 17:59:27.182 [initandlisten] connection accepted from 127.0.0.1:49476 #11 (2 connections now open)
+Tue Dec 31 17:59:30.655 [conn10] end connection 127.0.0.1:49464 (1 connection now open)
+Tue Dec 31 17:59:30.655 [initandlisten] connection accepted from 127.0.0.1:49477 #12 (2 connections now open)
+Tue Dec 31 17:59:57.191 [conn11] end connection 127.0.0.1:49476 (1 connection now open)
+Tue Dec 31 17:59:57.191 [initandlisten] connection accepted from 127.0.0.1:49488 #13 (2 connections now open)
+Tue Dec 31 18:00:00.663 [conn12] end connection 127.0.0.1:49477 (1 connection now open)
+Tue Dec 31 18:00:00.664 [initandlisten] connection accepted from 127.0.0.1:49489 #14 (2 connections now open)
+Tue Dec 31 18:00:27.201 [conn13] end connection 127.0.0.1:49488 (1 connection now open)
+Tue Dec 31 18:00:27.201 [initandlisten] connection accepted from 127.0.0.1:49494 #15 (2 connections now open)
+Tue Dec 31 18:00:30.672 [conn14] end connection 127.0.0.1:49489 (1 connection now open)
+Tue Dec 31 18:00:30.673 [initandlisten] connection accepted from 127.0.0.1:49495 #16 (2 connections now open)
+Tue Dec 31 18:00:57.214 [conn15] end connection 127.0.0.1:49494 (1 connection now open)
+Tue Dec 31 18:00:57.214 [initandlisten] connection accepted from 127.0.0.1:49520 #17 (2 connections now open)
+Tue Dec 31 18:01:00.681 [conn16] end connection 127.0.0.1:49495 (1 connection now open)
+Tue Dec 31 18:01:00.682 [initandlisten] connection accepted from 127.0.0.1:49521 #18 (2 connections now open)
+Tue Dec 31 18:01:27.224 [conn17] end connection 127.0.0.1:49520 (1 connection now open)
+Tue Dec 31 18:01:27.225 [initandlisten] connection accepted from 127.0.0.1:49528 #19 (2 connections now open)
+Tue Dec 31 18:01:30.692 [conn18] end connection 127.0.0.1:49521 (1 connection now open)
+Tue Dec 31 18:01:30.693 [initandlisten] connection accepted from 127.0.0.1:49529 #20 (2 connections now open)
+Tue Dec 31 18:01:57.235 [conn19] end connection 127.0.0.1:49528 (1 connection now open)
+Tue Dec 31 18:01:57.235 [initandlisten] connection accepted from 127.0.0.1:49535 #21 (3 connections now open)
+Tue Dec 31 18:02:00.702 [conn20] end connection 127.0.0.1:49529 (1 connection now open)
+Tue Dec 31 18:02:00.704 [initandlisten] connection accepted from 127.0.0.1:49536 #22 (2 connections now open)

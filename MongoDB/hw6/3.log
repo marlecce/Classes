@@ -180,3 +180,7 @@ Tue Dec 31 18:01:57.235 [conn19] end connection 127.0.0.1:49528 (1 connection no
 Tue Dec 31 18:01:57.235 [initandlisten] connection accepted from 127.0.0.1:49535 #21 (3 connections now open)
 Tue Dec 31 18:02:00.702 [conn20] end connection 127.0.0.1:49529 (1 connection now open)
 Tue Dec 31 18:02:00.704 [initandlisten] connection accepted from 127.0.0.1:49536 #22 (2 connections now open)
+Tue Dec 31 18:02:27.246 [conn21] end connection 127.0.0.1:49535 (1 connection now open)
+Tue Dec 31 18:02:27.246 [initandlisten] connection accepted from 127.0.0.1:49543 #23 (3 connections now open)
+Tue Dec 31 18:02:30.711 [conn22] end connection 127.0.0.1:49536 (1 connection now open)
+Tue Dec 31 18:02:30.712 [initandlisten] connection accepted from 127.0.0.1:49544 #24 (2 connections now open)
